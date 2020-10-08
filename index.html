@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<form name="stdreg" action="welcome.html">
+			<div class = "form-box">
+		<h1>Registration Form</h1>
+
+	<div class="input-box">
+		<i class="fa fa-pencil-square-o "></i>
+		<input type="text" name="fname" placeholder="First name">
+	</div>
+
+	<div class="input-box">
+			<i class="fa fa-pencil-square-o "></i>
+			<input type="text" name="lname" placeholder="Last name">
+	</div>
+	
+
+	<div class="input-box">
+		<i class="fa fa-envelope"></i>
+		<input type="email" name="EmailID" placeholder="Email">
+	</div>
+
+	<div class="input-box">
+		<i class="fa fa-mobile fa-2x"></i>
+		<input type= "text" name="uno" placeholder="Mobile number">
+	</div>
+
+	<div class="input-box">
+		<i class="fa fa-calendar"></i>
+		<input  class ="bday" type="date" id="birthday" name="birthday" placeholder="birthdate"> 
+	</div>
+
+	<div class="input-box">
+		<i class="fa fa-key"></i>
+		<input type="password" name="password" placeholder="password" id = "myinput">
+		<span class="eye" onclick="myfun()">
+			<i id ="hide1" class="fa fa-eye"></i>
+			<i id ="hide2" class="fa fa-eye-slash"></i>
+		</span>
+	</div>
+	<button type="submit" class="login-btn"  onclick="return validate();">Register</button>
+
+</div>
+<script type="text/javascript">
+	function myfun()
+	{
+		var x = document.getElementById("myinput");
+		var y = document.getElementById("hide1");
+		var z = document.getElementById("hide2");
+
+		if(x.type === 'password')
+		{
+			x.type = "text";
+			y.style.display = "block";
+			z.style.display ="none";
+		}
+		else
+		{
+			x.type = "password";
+			y.style.display = "none";
+			z.style.display ="block";
+		}
+	}
+</script>
+		 <script src="index.js"></script>
+	</form>
+</body>
+</html>

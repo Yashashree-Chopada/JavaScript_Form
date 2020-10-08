@@ -1,0 +1,94 @@
+*{
+
+	margin :0;
+	padding: 0;
+}
+body
+{
+	
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	background-image: url(9.jpg);
+}
+.form-box
+{
+	width :450px;
+	
+	margin :12% auto;
+	padding: 50px 0;
+	color: #ccc;
+	
+}
+h1
+{
+	color: rgba(0,0,0,1);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.fa
+{
+	color: rgba(0,0,0,1);
+	margin-right: 10px;
+}
+#birthday
+{
+	
+	 appearance: none;
+  box-sizing: border-box;
+ 
+  background: transparent;
+  font-size: 1.5rem;
+  padding: 8px;
+ text-transform: uppercase; 
+}
+
+.bday::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.input-box
+{
+	margin :31px auto;
+	width: 80%;
+	border-bottom :1px solid #ccc;
+	padding-top :10px;
+	padding-bottom: 5px;
+
+}
+.eye
+{
+	position:  absolute;
+
+}
+#hide1
+{
+	display: none;
+	cursor: pointer;
+}
+.login-btn
+{
+	margin: 40px auto 20px;
+	width: 80%;
+	display: block;
+	outline:none;
+	padding: 10px,0;
+	border: 1px solid #ccc;
+	cursor: pointer;
+
+	color: rgba(0,0,0,1);
+	font-size: 16px;
+}
+.input-box input
+{
+	width: 90%;
+	border: none;
+	outline: none;
+	
+	color:  black;
+}
+::placeholder
+{
+	color: rgba(0,0,0,1);
+}
